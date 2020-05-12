@@ -26,7 +26,15 @@ var server = http.createServer(function (request, response) {
   if (path === "/") {
     response.statusCode = 200;
     response.setHeader("Content-Type", "text/html;charset=utf-8");
-    response.write(`<h1>提交任务</h1>`);
+    response.write(`
+    <!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="/x">
+    </head>
+        <body>
+        <h1>批改我作业的人，幸运八辈子！</h1>
+        </body>
+    `);
     response.end();
   } else if (path === "/x") {
     response.statusCode = 200;
