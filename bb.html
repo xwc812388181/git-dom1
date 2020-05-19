@@ -9,6 +9,7 @@
 #box {
   margin:0 auto;
   display: none;
+  width: 100%
 }
 #box2{
   
@@ -28,11 +29,11 @@
 
 
 var box = document.getElementById('box');
-var a = prompt('请说我爱你,否则你就是傻逼');
-if (a==="我爱你") {
-  box.style.display="block";
+var a = prompt('是否认同华彬是电商党主席【认同】【不认同】');
+if (a==="认同") {
+  alert("恭喜你！正式进入电商党一员");
 }else {
-  box2.style.display="block"
+  alert("去你吗的傻逼，叛徒！");
 }
 
 
